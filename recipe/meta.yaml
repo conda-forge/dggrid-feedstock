@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}-conda1.tar.gz
-  sha256: 407c9609e30672c7a7156dbffd3981dd802e8782199919b3d8abce8c9f72579d
+  sha256: cf1e43af5b116b4dd990f19b1681f38d0694afdf43fcef1d73a99be12bdd53de
 
 build:
   number: 0
