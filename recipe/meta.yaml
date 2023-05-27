@@ -1,5 +1,5 @@
 {% set name = "dggrid" %}
-{% set version = "7.7" %}
+{% set version = "7.8" %}
 
 package:
   name: {{ name }}
@@ -11,13 +11,13 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler("cxx") }}
     - cmake >=3.12,<4
-    - make  # [linux]
+    - make  # [not win]
+    - ninja  # [win]
   host:
     - libgdal
     - shapelib
@@ -28,6 +28,7 @@ requirements:
 test:
   commands:
     - test -f ${PREFIX}/bin/dggrid 
+    - ${PREFIX}/bin/dggrid -v
     - if not exist %LIBRARY_BIN%\dggrid exit 1  # [win]
 
 about:
