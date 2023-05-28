@@ -27,8 +27,7 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/bin/dggrid # [not win]
-    - ${PREFIX}/bin/dggrid -v # [not win]
+    - test -f ${PREFIX}/bin/dggrid && ${PREFIX}/bin/dggrid -v 
     - if not exist %LIBRARY_BIN%\dggrid exit 1  # [win]
     - %LIBRARY_BIN%\dggrid -v  # [win]
 
