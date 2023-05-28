@@ -27,8 +27,8 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/bin/dggrid
-    - if not exist %LIBRARY_BIN%\dggrid.exe exit 1  # [win]
+    - dggrid -v
+    - dggrid.exe -v  # [win]
 
 about:
   home: https://github.com/sahrk/DGGRID
