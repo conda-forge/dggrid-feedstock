@@ -13,5 +13,5 @@ if errorlevel 1 exit 1
 REM nmake install
 REM if errorlevel 1 exit 1
 
-copy src\apps\dggrid\dggrid %PREFIX%\Library\bin\dggrid.exe
+copy src\apps\dggrid\dggrid.exe %PREFIX%\Library\bin\dggrid.exe
 if errorlevel 1 exit 1
