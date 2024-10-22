@@ -1,13 +1,13 @@
 {% set name = "dggrid" %}
-{% set version = "7.8" %}
+{% set version = "8.1b" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}-conda2.tar.gz
-  sha256: 195bd13452b8fad0188e1ae5a2adb2e5dcd2d62e7a403c391fcb678d32bcb98a
+  url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}-conda1.tar.gz
+  sha256: e6b11bf13a7584514dde92e4499a31aa2c68d3e23784a75c77d7a97ec982988c
 
 build:
   number: 0
@@ -15,7 +15,7 @@ build:
 requirements:
   build:
     - {{ compiler("cxx") }}
-    - cmake >=3.12,<4
+    - cmake >=3.19,<4
     - make  # [not win]
     - ninja  # [win]
   host:
