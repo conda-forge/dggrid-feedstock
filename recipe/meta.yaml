@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}-conda2.tar.gz
-  sha256: e1645259ef4689959aa78d3c5bffc023ed71d2f0a4e3ba1df870b6db0afd1c40
+  url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}-conda3.tar.gz
+  sha256: 3531e0248f94a90e32deb78b57b9d8e4376870dcfc20698ff2acf5074606f3ba
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
