@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}-conda4.tar.gz
-  sha256: 493f2fb8051de92ee088a789a40ff138fc5b451218557e771caf7d99a6003732
+  url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}-conda5.tar.gz
+  sha256: 98edb3723dd58cc406db0613ba62ee185dce4348fed03878a6b75531e6dbfc59
 
 build:
   number: 2
