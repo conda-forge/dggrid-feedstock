@@ -1,16 +1,16 @@
 {% set name = "dggrid" %}
-{% set version = "8.1b" %}
+{% set version = "8.3" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}-conda6.tar.gz
-  sha256: 7c1d51d3eed017c87d7f2cdec45b5b040d34c5ed5614d06ca15a5b60b9bc3625
+  url: https://github.com/allixender/DGGRID/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 9bc1e4c52a338ad9daf791de76a780d735e6f6ffd6c21a8e2c2e3e25bb21c8b4
 
 build:
-  number: 6
+  number: 0
 
 requirements:
   build:
