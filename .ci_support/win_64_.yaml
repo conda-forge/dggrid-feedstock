@@ -7,6 +7,6 @@ channel_targets:
 cxx_compiler:
 - vs2022
 libgdal:
-- '3.11'
+- '3.12'
 target_platform:
 - win-64
