@@ -3,7 +3,7 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/sahrk/DGGRID/archive/refs/tags/v{{ version }}.tar.gz
@@ -16,7 +16,7 @@ requirements:
   build:
     - {{ compiler("cxx") }}
     - {{ stdlib("c") }}
-    - cmake >=3.19,<4
+    - cmake >=3.20
     - make  # [not win]
     - ninja  # [win]
   host:
@@ -34,7 +34,10 @@ test:
 about:
   home: https://github.com/sahrk/DGGRID
   license: AGPL-3.0-or-later
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - LICENSE.H3
+    - src/lib/proj4lib/LICENSE
   summary: A command-line application that generates and manipulates icosahedral discrete global grids.
 
   dev_url: https://github.com/sahrk/DGGRID
