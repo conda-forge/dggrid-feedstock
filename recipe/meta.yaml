@@ -1,5 +1,5 @@
 {% set name = "dggrid" %}
-{% set version = "9.1" %}
+{% set version = "9.15" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sahrk/DGGRID/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 04bb3384beee15deaf3de0050f110d86ad34a9e47dd10712f73f7a3ea5982a4b
+  sha256: 4133ae364eb427547e0308a8852ef7375decee627cb18c02b3ab023a3778064e
 
 build:
   number: 0
